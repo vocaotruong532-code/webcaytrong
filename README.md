@@ -1,6 +1,6 @@
 # HỆ THỐNG GIÁM SÁT DINH DƯỠNG CÂY TRỒNG SỬ DỤNG WEB TĨNH VÀ MÔ HÌNH B2C
 
-Hệ thống giám sát dinh dưỡng cây trồng được xây dựng theo dạng website tĩnh (Static Website) kết hợp mô hình B2C 
+Hệ thống giám sát dinh dưỡng cây trồng được xây dựng theo dạng website tĩnh (Static Website) kết hợp mô hình B2C
 (Business to Customer). Hệ thống được thiết kế nhằm hỗ trợ người dùng theo dõi dữ liệu môi trường cây trồng và điều
 khiển các thiết bị nông nghiệp thông minh thông qua giao diện website trực quan.
 
