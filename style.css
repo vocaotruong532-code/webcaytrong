@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -522,3 +523,529 @@ footer {
 .btn {
   color: white;
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+}
+
+body {
+  display: flex;
+  background: yellowgreen;
+  color: white;
+  overflow-x: hidden;
+}
+
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 8px solid #ddd;
+  border-top: 8px solid green;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1b5e20, #2e7d32);
+  color: white;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 12px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: yellow;
+  transform: translateX(5px);
+}
+
+.main-content {
+  margin-left: 250px;
+  width: 100%;
+}
+
+header {
+  background: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  color: #1b5e20;
+}
+
+.hero {
+  height: 320px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/slide1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  color: yellow;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+
+  color: yellow;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.4s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  background: #2e7d32;
+  box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.stat-card,
+.sensor-card,
+.team-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  text-align: center;
+}
+
+.stat-card:hover,
+.sensor-card:hover,
+.team-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h3,
+.sensor-card h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 35px;
+  color: green;
+  font-weight: bold;
+}
+
+.dashboard-grid,
+.settings-grid,
+.sensor-grid,
+.team-grid,
+.analysis-grid {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+}
+
+.dashboard-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.settings-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.sensor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.analysis-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  margin-top: 25px;
+
+  padding: 0;
+}
+
+.setting-card,
+.sensor-box,
+.analysis-card {
+  background: linear-gradient(135deg, #ffffff, #f1fff1);
+  padding: 30px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  transition: 0.4s;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.setting-card::before,
+.sensor-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(76, 175, 80, 0.1);
+
+  border-radius: 50%;
+
+  top: -40px;
+  right: -40px;
+}
+
+.setting-card:hover,
+.sensor-box:hover,
+.analysis-card:hover {
+  transform: translateY(-10px);
+}
+
+.setting-card h2,
+.sensor-box h2,
+.analysis-card h3 {
+  color: #2e7d32;
+
+  margin-bottom: 15px;
+}
+
+.sensor-box {
+  text-align: center;
+}
+
+.sensor-box p {
+  font-size: 35px;
+
+  font-weight: bold;
+
+  color: #1b5e20;
+}
+
+.analysis-card p {
+  color: white;
+
+  line-height: 1.6;
+}
+
+.setting-card label {
+  display: block;
+
+  margin-top: 15px;
+
+  margin-bottom: 8px;
+
+  font-weight: bold;
+}
+
+.setting-card input,
+.setting-card select {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+}
+
+.setting-card input:focus,
+.setting-card select:focus {
+  outline: none;
+
+  border-color: #4caf50;
+}
+
+.progress {
+  width: 100%;
+
+  height: 20px;
+
+  background: #ddd;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  margin: 20px 0;
+}
+
+#humidity-bar,
+#temp-bar,
+#ph-bar {
+  height: 100%;
+
+  width: 50%;
+
+  background: linear-gradient(90deg, #4caf50, #81c784);
+
+  border-radius: 20px;
+}
+
+.chart-section,
+.alert-section {
+  background: white;
+
+  margin: 30px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2,
+.alert-section h2 {
+  text-align: center;
+
+  color: #1b5e20;
+
+  margin-bottom: 20px;
+}
+
+.device-table,
+.report-table {
+  width: 90%;
+
+  margin: 0 auto;
+
+  border-collapse: collapse;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.device-table th,
+.report-table th {
+  background: #2e7d32;
+
+  color: white;
+
+  padding: 15px;
+
+  font-size: 18px;
+}
+
+.device-table td,
+.report-table td {
+  padding: 15px;
+
+  border-bottom: 1px solid #ddd;
+
+  background: white;
+}
+
+.device-table tr:hover,
+.report-table tr:hover {
+  background: #f1fff1;
+}
+
+#alert-box,
+#waterStatus,
+#fanStatus,
+#lightStatus {
+  background: #f5fff5;
+
+  padding: 15px;
+
+  border-radius: 12px;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark header,
+.dark .stat-card,
+.dark .sensor-card,
+.dark .chart-section,
+.dark .alert-section,
+.dark .team-card,
+.dark .setting-card,
+.dark .sensor-box,
+.dark .analysis-card {
+  background: #222;
+
+  color: white;
+}
+
+.dark .sensor-box h2,
+.dark .sensor-box p,
+.dark .setting-card h2,
+.dark .analysis-card h3 {
+  color: #90ee90;
+}
+
+.dark .setting-card input,
+.dark .setting-card select {
+  background: #333;
+
+  color: white;
+
+  border: 1px solid #555;
+}
+
+.dark #alert-box,
+.dark #waterStatus,
+.dark #fanStatus,
+.dark #lightStatus {
+  background: #333;
+}
+
+.dark .report-table td,
+.dark .device-table td {
+  background: #222;
+
+  color: white;
+}
+
+.dark .report-table tr:hover,
+.dark .device-table tr:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+
+    height: auto;
+
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .sensor-box,
+  .setting-card,
+  .analysis-card {
+    padding: 25px;
+  }
+
+  .sensor-box h2 {
+    font-size: 22px;
+  }
+
+  .sensor-box p {
+    font-size: 28px;
+  }
+
+  .chart-section,
+  .alert-section {
+    margin: 15px;
+  }
+}
+.control-panel {
+  top: 20px;
+  text-align: center;
+  right: 20px;
+  text-align: center;
+  background: green;
+  color: yellow;
+  padding: 10px 15px;
+}
+.btn {
+  color: white;
+}
+>>>>>>> 53a5bd513a74051d869f70f80e6ba625adca89c9
