@@ -42,24 +42,34 @@ Hệ thống hỗ trợ người dùng trong việc chăm sóc cây trồng hi�
 
 ## 🧰 Công nghệ sử dụng
 ### Phần cứng:
-- ESP8266 / ESP32
 - Cảm biến độ ẩm đất
-- Cảm biến nhiệt độ (DHT11 / DHT22)
+- Cảm biến nhiệt độ
 - Cảm biến ánh sáng
 - Relay điều khiển bơm nước
 
 ### Phần mềm:
 - HTML, CSS, JavaScript (Frontend)
 - Chart.js (hiển thị biểu đồ)
+
 🗂️ Thư mục dự án
 project/
 │
+
 ├── images/              # Thư mục chứa hình ảnh
+
 ├── index.html          # Trang chủ
+
 ├── cambien.html        # Trang cảm biến
+
 ├── phantich.html       # Trang phân tích dữ liệu
+
 ├── setting.html        # Trang cài đặt hệ thống
+
 ├── thietbi.html        # Trang thiết bị
+
 ├── style.css          # File giao diện CSS
+
 ├── script.js          # File JavaScript xử lý logic
+
 └── README.md          # Tài liệu mô tả dự án
+
