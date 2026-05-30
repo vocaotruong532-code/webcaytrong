@@ -53,7 +53,7 @@ Hệ thống hỗ trợ người dùng trong việc chăm sóc cây trồng hi�
 
 🗂️ Thư mục dự án
 project/
-│
+
 
 ├── images/              # Thư mục chứa hình ảnh
 
