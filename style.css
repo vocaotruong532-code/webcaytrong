@@ -128,7 +128,7 @@ header h1 {
   padding: 12px 25px;
   border: none;
   border-radius: 12px;
-  background: green;
+  background: rgb(107, 138, 46);
   color: white;
   cursor: pointer;
   margin: 10px;
@@ -139,7 +139,7 @@ header h1 {
 
 .btn:hover {
   transform: translateY(-5px);
-  background: green;
+  background: rgb(61, 145, 61);
   box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
 }
 
@@ -401,7 +401,7 @@ header h1 {
 #waterStatus,
 #fanStatus,
 #lightStatus {
-  background: #f5fff5;
+  background: rgb(80, 156, 80);
 
   padding: 15px;
 
